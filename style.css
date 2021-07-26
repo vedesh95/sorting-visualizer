@@ -1,0 +1,26 @@
+/*style for body*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #20201f;    
+    color: white;
+}
+/*style for .flex-container of bars*/
+.flex-container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 500px;
+    justify-content: center;
+    transition: 2s all ease;
+}
+/*styling for each individual bar*/
+.flex-item{
+    background: #ffddcc;
+    border: 1pt solid black;
+    width: 10px;
+    transition: 0.1s all ease;
+}
+button{
+    margin-top: 2px;
+}

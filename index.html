@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiUMpb2CV_z6pnTt_ePlghP9OC8tuL64gAw&usqp=CAU" type="image/png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="p-3">
+    <h1 class="text-center mt-2 mb-3">Sorting Visualizer</h1>
+    <div class="d-sm-flex justify-content-around">
+        <div class="gap-2 col-md-auto">
+            <button type="button" class="btn btn-outline-info newArray">New Array</button>
+        </div>
+        <div class="gap-2 col-md-auto d-sm-flex justify-content-center mt-2">
+            <label for="arr_sz" class="form-label">Size</label>
+            <input id="arr_sz" type="range" class="form-range" min="5" max="100" step=1 value=60>
+            <label for="speed_input" class="form-label">Speed</label>
+            <input id="speed_input" type="range" class="form-range" min="20" max="300" stepDown=10 value=60>
+        </div>
+        <div class="gap-2 col-md-auto ">
+            <button type="button" class="btn btn-outline-info bubbleSort">Bubble Sort</button>
+            <button type="button" class="btn btn-outline-info selectionSort">Selection Sort</button>
+            <button type="button" class="btn btn-outline-info insertionSort">Insertion Sort</button>
+            <button type="button" class="btn btn-outline-info quickSort">Quick Sort</button>
+            <button type="button" class="btn btn-outline-info mergeSort">Merge Sort</button>
+        </div>
+    </div>
+    
+
+    <div id="bars" class="flex-container"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    <script src="js/sorting.js"></script>
+    <script src="js/bubble_sort.js"></script>
+    <script src="js/selection_sort.js"></script>
+    <script src="js/insertion_sort.js"></script>
+    <script src="js/merge_sort.js"></script>
+    <script src="js/quick_sort.js"></script>
+</body>
+</html>
