@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: sorting-visualizer
+  labels:
+    app: sorting-visualizer-app  
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sorting-visualizer-pod
+  template:
+    metadata:
+      labels:
+        app: sorting-visualizer-pod
+    spec:
+      containers:
+      - name: sorting-visualizer-container
+        image: nuhuris/sorting-visualizer
+        ports:
+        - containerPort: 80
